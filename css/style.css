@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Helvetica, Arial;
+	font-weight: 500;
+}
+
+svg {
+	width: 50%;
+	height: 50%;
+}
+
+.svg-draw {
+	stroke: black;
+	stroke-width: 1px;
+	fill: transparent;
+	stroke-dasharray: 3000;	
+	stroke-dashoffset: 3000;	
+	animation: svg-draw-animation 2s linear forwards;
+}
+
+@keyframes svg-draw-animation {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
